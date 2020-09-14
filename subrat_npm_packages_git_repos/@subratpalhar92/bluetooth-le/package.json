@@ -1,8 +1,8 @@
 {
   "name": "@subratpalhar92/bluetooth-le",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my custom wrapper for ionic bluetoothLE plugin",
-  "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,13 @@
     "url": "https://github.com/SUBRATPALHAR-androidnionic/ionic-native/tree/subrat/subrat_npm_packages_git_repos/%40subratpalhar92/bluetooth-le/ngx"
   },
   "author": "subrat",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/cordova": "latest"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.5.0 || ^6.5.0",
+    "@ionic-native/core": "^5.1.0"
+  },
+  "typings": "index.d.ts"
 }
