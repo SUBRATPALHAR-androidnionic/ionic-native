@@ -705,6 +705,18 @@ export class BluetoothLE extends IonicNativePlugin {
   }
 
   /**
+   * @name writeCommandInByteArray (Android Only)
+   * Write hexadecimal byte to a particular service's characteristic
+   * Note: no callback will occur on write without response on iOS.
+   * @param {WriteCharacteristicParams} params
+   * @returns {Promise<OperationResult>}
+   */
+  @Cordova({ callbackOrder: 'reverse' })
+  writeCommandInByteArray(params: WriteCharacteristicParams): Promise<OperationResult> {
+    return;
+  }
+
+  /**
    * @name readDescriptor
    * Read a particular characterist's descriptor
    * @param {OperationDescriptorParams} params
