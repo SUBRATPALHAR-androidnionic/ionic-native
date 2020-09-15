@@ -447,7 +447,7 @@ export class BLE extends IonicNativePlugin {
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
    * @param {string} characteristicUUID  UUID of the BLE characteristic
-   * @param {ArrayBuffer} value  Data to write to the characteristic, as an ArrayBuffer.
+   * @param {any[]} value  Data to write to the characteristic, as an ArrayBuffer.
    * @return {Promise<any>} Returns a Promise
    */
   @Cordova()
@@ -455,7 +455,7 @@ export class BLE extends IonicNativePlugin {
     deviceId: string,
     serviceUUID: string,
     characteristicUUID: string,
-    value: ArrayBuffer
+    value: any[]
   ): Promise<any> {
     return;
   }
