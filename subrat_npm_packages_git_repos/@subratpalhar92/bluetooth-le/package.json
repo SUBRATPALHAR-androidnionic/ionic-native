@@ -1,6 +1,6 @@
 {
   "name": "@subratpalhar92/bluetooth-le",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "my custom wrapper for ionic bluetoothLE plugin",
   "module": "index.js",
   "scripts": {

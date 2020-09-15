@@ -122,7 +122,6 @@ export interface WriteCharacteristicParams extends DescriptorParams {
 }
 
 export interface WriteCommandInByteArrayParams extends DescriptorParams {
-  value: ArrayBuffer;
   /* Set to "noResponse" to enable write without response, all other values will write normally. */
   type?: string;
 }
@@ -715,10 +714,11 @@ export class BluetoothLE extends IonicNativePlugin {
    * Write hexadecimal byte to a particular service's characteristic
    * Note: no callback will occur on write without response on iOS.
    * @param {WriteCommandInByteArrayParams} params
+   * @param value ArrayBuffer
    * @returns {Promise<OperationResult>}
    */
   @Cordova({ callbackOrder: 'reverse' })
-  writeCommandInByteArray(params: WriteCommandInByteArrayParams): Promise<OperationResult> {
+  writeCommandInByteArray(params: WriteCommandInByteArrayParams, value: ArrayBuffer): Promise<OperationResult> {
     return;
   }
 

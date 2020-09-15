@@ -67,7 +67,7 @@
           "__symbolic": "reference",
           "module": "@ionic-native/core",
           "name": "IonicNativePlugin",
-          "line": 431,
+          "line": 430,
           "character": 33
         },
         "decorators": [
@@ -77,7 +77,7 @@
               "__symbolic": "reference",
               "module": "@angular/core",
               "name": "Injectable",
-              "line": 430,
+              "line": 429,
               "character": 1
             }
           }
