@@ -15,6 +15,7 @@
       "DescriptorParams": { "__symbolic": "interface" },
       "OperationDescriptorParams": { "__symbolic": "interface" },
       "WriteCharacteristicParams": { "__symbolic": "interface" },
+      "WriteCommandInByteArrayParams": { "__symbolic": "interface" },
       "WriteDescriptorParams": { "__symbolic": "interface" },
       "AdvertisingParams": { "__symbolic": "interface" },
       "AdvertiseMode": { "__symbolic": "interface" },
@@ -66,7 +67,7 @@
           "__symbolic": "reference",
           "module": "@ionic-native/core",
           "name": "IonicNativePlugin",
-          "line": 425,
+          "line": 431,
           "character": 33
         },
         "decorators": [
@@ -76,7 +77,7 @@
               "__symbolic": "reference",
               "module": "@angular/core",
               "name": "Injectable",
-              "line": 424,
+              "line": 430,
               "character": 1
             }
           }
