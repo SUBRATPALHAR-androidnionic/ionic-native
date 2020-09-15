@@ -442,6 +442,25 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
+   * Write the value of a characteristic without ascii conversation ~ write().
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {ArrayBuffer} value  Data to write to the characteristic, as an ArrayBuffer.
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  writeCommandWithoutAsciiConversion(
+    deviceId: string,
+    serviceUUID: string,
+    characteristicUUID: string,
+    value: ArrayBuffer
+  ): Promise<any> {
+    return;
+  }
+
+  /**
    * Register to be notified when the value of a characteristic changes.
    *
    * @usage
