@@ -461,6 +461,34 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
+   * Write the value of a characteristic without ascii conversation ~ write().
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {any[]} value  takes decimal number & convert it to hexadecimal & then round off to one unsigned byte (&0xFF)
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  writeHexString(deviceId: string, serviceUUID: string, characteristicUUID: string, value: any[]): Promise<any> {
+    return;
+  }
+
+  /**
+   * test writting byte array
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {any[]} value  takes decimal number & convert it to hexadecimal & then round off to one unsigned byte (&0xFF)
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  testWrite(deviceId: string, serviceUUID: string, characteristicUUID: string, value: any[]): Promise<any> {
+    return;
+  }
+
+  /**
    * Register to be notified when the value of a characteristic changes.
    *
    * @usage
