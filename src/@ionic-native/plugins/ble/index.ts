@@ -451,12 +451,7 @@ export class BLE extends IonicNativePlugin {
    * @return {Promise<any>} Returns a Promise
    */
   @Cordova()
-  writeCommandWithoutAsciiConversion(
-    deviceId: string,
-    serviceUUID: string,
-    characteristicUUID: string,
-    value: any[]
-  ): Promise<any> {
+  writeHexByte(deviceId: string, serviceUUID: string, characteristicUUID: string, value: any[]): Promise<any> {
     return;
   }
 

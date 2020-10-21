@@ -38,7 +38,7 @@
           "read": [{ "__symbolic": "method" }],
           "write": [{ "__symbolic": "method" }],
           "writeWithoutResponse": [{ "__symbolic": "method" }],
-          "writeCommandWithoutAsciiConversion": [{ "__symbolic": "method" }],
+          "writeHexByte": [{ "__symbolic": "method" }],
           "writeHexString": [{ "__symbolic": "method" }],
           "testWrite": [{ "__symbolic": "method" }],
           "startNotification": [{ "__symbolic": "method" }],
