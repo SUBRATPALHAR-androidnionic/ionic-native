@@ -442,7 +442,9 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
-   * Write the value of a characteristic without ascii conversation ~ write().
+   * writes unsigned Hex Byte in byte array
+   * max: 256 [0-255]
+   * accepts HEX-Numbers as args
    *
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
@@ -456,7 +458,10 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
-   * Write the value of a characteristic without ascii conversation ~ write().
+   * Accepts ASCII equivalent of args in Decimal-Format
+   * Convert it to HEX Numbers
+   * Writes unsigned hex number in byte array
+   * Max: 256 [0-255]
    *
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
@@ -470,8 +475,26 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
-   * test writting byte array
+   * Accepts string data
+   * Uses java method getBytes() to get ByteArray from a given string
    *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {any[]} value  takes decimal number & convert it to hexadecimal & then round off to one unsigned byte (&0xFF)
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  writeStringWithGetBytes(
+    deviceId: string,
+    serviceUUID: string,
+    characteristicUUID: string,
+    value: string
+  ): Promise<any> {
+    return;
+  }
+
+  /**
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
    * @param {string} characteristicUUID  UUID of the BLE characteristic
