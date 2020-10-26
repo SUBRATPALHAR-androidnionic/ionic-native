@@ -495,6 +495,26 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
+   * Accepts string data
+   * Uses java method getBytes() to get ByteArray from a given string
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {any[]} value  takes decimal number & convert it to hexadecimal & then round off to one unsigned byte (&0xFF)
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  writeStringWithGetBytesWithoutResponse(
+    deviceId: string,
+    serviceUUID: string,
+    characteristicUUID: string,
+    value: string
+  ): Promise<any> {
+    return;
+  }
+
+  /**
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
    * @param {string} characteristicUUID  UUID of the BLE characteristic

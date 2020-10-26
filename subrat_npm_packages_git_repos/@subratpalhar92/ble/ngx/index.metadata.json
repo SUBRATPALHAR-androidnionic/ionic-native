@@ -41,6 +41,7 @@
           "writeHexByte": [{ "__symbolic": "method" }],
           "writeHexString": [{ "__symbolic": "method" }],
           "writeStringWithGetBytes": [{ "__symbolic": "method" }],
+          "writeStringWithGetBytesWithoutResponse": [{ "__symbolic": "method" }],
           "testWrite": [{ "__symbolic": "method" }],
           "startNotification": [{ "__symbolic": "method" }],
           "stopNotification": [{ "__symbolic": "method" }],
