@@ -458,19 +458,37 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
-   * Accepts ASCII equivalent of args in Decimal-Format
-   * Convert it to HEX Numbers
-   * Writes unsigned hex number in byte array
-   * Max: 256 [0-255]
+   * Accepts hex string as input
+   * WriteType:: Default (With-Response)
    *
    * @param {string} deviceId  UUID or MAC address of the peripheral
    * @param {string} serviceUUID  UUID of the BLE service
    * @param {string} characteristicUUID  UUID of the BLE characteristic
-   * @param {any[]} value  takes decimal number & convert it to hexadecimal & then round off to one unsigned byte (&0xFF)
+   * @param {string} value  takes hex string as input
    * @return {Promise<any>} Returns a Promise
    */
   @Cordova()
-  writeHexString(deviceId: string, serviceUUID: string, characteristicUUID: string, value: any[]): Promise<any> {
+  writeHexString(deviceId: string, serviceUUID: string, characteristicUUID: string, value: string): Promise<any> {
+    return;
+  }
+
+  /**
+   * Accepts hex string as input
+   * WriteType:: WithoutResponse
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} serviceUUID  UUID of the BLE service
+   * @param {string} characteristicUUID  UUID of the BLE characteristic
+   * @param {string} value  takes hex string as input
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  writeHexStringWithoutResponse(
+    deviceId: string,
+    serviceUUID: string,
+    characteristicUUID: string,
+    value: string
+  ): Promise<any> {
     return;
   }
 

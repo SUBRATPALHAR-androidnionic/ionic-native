@@ -40,6 +40,7 @@
           "writeWithoutResponse": [{ "__symbolic": "method" }],
           "writeHexByte": [{ "__symbolic": "method" }],
           "writeHexString": [{ "__symbolic": "method" }],
+          "writeHexStringWithoutResponse": [{ "__symbolic": "method" }],
           "writeStringWithGetBytes": [{ "__symbolic": "method" }],
           "writeStringWithGetBytesWithoutResponse": [{ "__symbolic": "method" }],
           "testWrite": [{ "__symbolic": "method" }],
